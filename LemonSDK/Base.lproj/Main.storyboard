@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-rv-XgM">
+                                <rect key="frame" x="209" y="70" width="183" height="110"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.72549019609999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Sgz-QW-Vvl"/>
+                                    <constraint firstAttribute="width" constant="183" id="jqS-js-WnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="QQLogin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="qqLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29p-Nc-4Ug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-YJ-cWv">
+                                <rect key="frame" x="209" y="210" width="183" height="110"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.20392156859999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="NBA-YP-tmX"/>
+                                    <constraint firstAttribute="height" constant="110" id="erK-Va-EAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="WeChatLogin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wechatLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVQ-CC-oxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-6D-Gh3">
+                                <rect key="frame" x="209" y="350" width="183" height="110"/>
+                                <color key="backgroundColor" red="1" green="0.58898278540000004" blue="0.36645243640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Gvg-r5-Ztc"/>
+                                    <constraint firstAttribute="width" constant="183" id="lEO-o8-U51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="WeiBoLogin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="weiBoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUI-sB-e3y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avr-zl-y0Q">
+                                <rect key="frame" x="209" y="542" width="183" height="50"/>
+                                <color key="backgroundColor" red="0.47607037323970747" green="0.49933543904155858" blue="0.91727825129999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yf5-4g-HWh"/>
+                                    <constraint firstAttribute="width" constant="183" id="ZJF-TA-73s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dq5-Do-jR0" kind="show" id="9wz-in-OnW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="avr-zl-y0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Mq-Hf-z6i"/>
+                            <constraint firstItem="7Rh-YJ-cWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ncb-vW-hfS"/>
+                            <constraint firstItem="7Rh-YJ-cWv" firstAttribute="top" secondItem="dRJ-rv-XgM" secondAttribute="bottom" constant="30" id="Prh-la-EYq"/>
+                            <constraint firstItem="dRJ-rv-XgM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="U6v-Sy-Kai"/>
+                            <constraint firstItem="VS5-6D-Gh3" firstAttribute="top" secondItem="7Rh-YJ-cWv" secondAttribute="bottom" constant="30" id="Zpr-Dp-9gE"/>
+                            <constraint firstItem="VS5-6D-Gh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c84-uF-v8O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="avr-zl-y0Q" secondAttribute="bottom" constant="8" id="fOv-3F-NJ3"/>
+                            <constraint firstItem="dRJ-rv-XgM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lWR-hT-wiz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="kRC-xP-lh8">
+            <objects>
+                <viewController id="dq5-Do-jR0" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zjv-Cv-gDs"/>
+                        <viewControllerLayoutGuide type="bottom" id="vkV-Wz-w7R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9XQ-ra-Wus">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTp-7x-Hdj">
+                                <rect key="frame" x="209" y="542" width="183" height="50"/>
+                                <color key="backgroundColor" red="0.47607037320000001" green="0.49933543899999999" blue="0.91727825129999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S9A-xj-csO"/>
+                                    <constraint firstAttribute="width" constant="183" id="dNT-ph-nGr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="dq5-Do-jR0" eventType="touchUpInside" id="Hkg-JQ-UDR"/>
+                                    <action selector="weiBoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxT-n0-2wh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-Nd-8f9">
+                                <rect key="frame" x="209" y="74" width="183" height="110"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.72549019609999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="Zuy-aM-r2i"/>
+                                    <constraint firstAttribute="height" constant="110" id="z6W-2K-ebS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="QQShare">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="qqLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsa-KN-4dn"/>
+                                    <action selector="shareToQQ:" destination="dq5-Do-jR0" eventType="touchUpInside" id="iOr-AH-BJX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxR-jC-8ND">
+                                <rect key="frame" x="208" y="214" width="183" height="110"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.20392156859999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="qAb-Y2-zQr"/>
+                                    <constraint firstAttribute="height" constant="110" id="qUH-gb-J4v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="WeChatShare">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareToWechat:" destination="dq5-Do-jR0" eventType="touchUpInside" id="6iG-pI-4GG"/>
+                                    <action selector="wechatLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eX0-t5-BTd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQs-am-mXV">
+                                <rect key="frame" x="208" y="354" width="183" height="110"/>
+                                <color key="backgroundColor" red="1" green="0.58898278540000004" blue="0.36645243640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="Ro2-H6-JQ2"/>
+                                    <constraint firstAttribute="height" constant="110" id="iMh-OY-d28"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="WeiBoShare">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareToWeibo:" destination="dq5-Do-jR0" eventType="touchUpInside" id="jGP-X9-tOq"/>
+                                    <action selector="weiBoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEt-D7-ker"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQs-am-mXV" firstAttribute="centerX" secondItem="9XQ-ra-Wus" secondAttribute="centerX" id="1cY-bH-dAS"/>
+                            <constraint firstItem="HxR-jC-8ND" firstAttribute="top" secondItem="R8b-Nd-8f9" secondAttribute="bottom" constant="30" id="7Rb-rM-ntN"/>
+                            <constraint firstItem="R8b-Nd-8f9" firstAttribute="centerX" secondItem="9XQ-ra-Wus" secondAttribute="centerX" id="Qdm-tW-zCp"/>
+                            <constraint firstItem="BQs-am-mXV" firstAttribute="top" secondItem="HxR-jC-8ND" secondAttribute="bottom" constant="30" id="Qyj-bQ-s59"/>
+                            <constraint firstItem="R8b-Nd-8f9" firstAttribute="top" secondItem="zjv-Cv-gDs" secondAttribute="bottom" constant="54" id="VOx-D0-FQf"/>
+                            <constraint firstItem="HxR-jC-8ND" firstAttribute="top" secondItem="R8b-Nd-8f9" secondAttribute="bottom" constant="30" id="a8D-hh-XNS"/>
+                            <constraint firstItem="vkV-Wz-w7R" firstAttribute="top" secondItem="MTp-7x-Hdj" secondAttribute="bottom" constant="8" id="aBd-te-26U"/>
+                            <constraint firstItem="HxR-jC-8ND" firstAttribute="centerX" secondItem="9XQ-ra-Wus" secondAttribute="centerX" id="c3E-hk-62C"/>
+                            <constraint firstItem="MTp-7x-Hdj" firstAttribute="centerX" secondItem="9XQ-ra-Wus" secondAttribute="centerX" id="onr-aS-BBZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a8D-hh-XNS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXP-sH-yvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="429"/>
+        </scene>
+    </scenes>
+</document>
